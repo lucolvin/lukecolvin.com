@@ -13,10 +13,30 @@ body {
 
 /* Style the header */
 header {
-  background-color: #CE1141; /* Atlanta Braves scarlet red */
-  color: #fff;
+  background-image: url('https://github.com/lucolvin/Home/raw/main/braves%20banner.jpeg'); /* Add the URL of the online image */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center; /* Center the image within the header */
+  color: transparent; /* Set text color to transparent */
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-position 0.5s, box-shadow 0.3s; /* Extend the transition duration */
+}
+
+/* Add a more noticeable hover effect to the header */
+header:hover {
+  background-position: right top; /* Move the background image to the top-right on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a subtle glow effect on hover */
+}
+
+/* Apply a gradient color to the header text */
+h1 {
+  font-size: 48px; /* Larger font size for the header text */
+  letter-spacing: 2px; /* Add some letter spacing for a techy look */
+  text-transform: uppercase; /* Convert text to uppercase for a modern look */
+  background-clip: text; /* Set the background-clip to text for gradient coloring */
+  color: transparent; /* Set the text color to transparent */
+  background-image: linear-gradient(to right, #FF4081, #3F51B5); /* Gradient from pink to indigo */
 }
 
 /* Style the navigation menu */
@@ -61,12 +81,6 @@ section {
   margin-bottom: 30px;
 }
 
-h2 {
-  color: #002F5F; /* Atlanta Braves navy blue */
-  border-bottom: 1px solid #002F5F;
-  padding-bottom: 5px;
-}
-
 /* Style the footer */
 footer {
   background-color: #002F5F; /* Atlanta Braves navy blue */
@@ -97,7 +111,7 @@ footer {
 button {
   background-color: #002F5F; /* Atlanta Braves navy blue */
   color: #fff;
-  padding: 8px 15px;
+  padding: 25px 50px;
   border-radius: 5px;
   cursor: pointer; /* Change cursor to a pointer on hover */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
