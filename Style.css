@@ -82,6 +82,26 @@ section {
   margin-bottom: 30px;
 }
 
+/* Add styles for the grid */
+#linkGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 600px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
 /* Style the footer */
 footer {
   background-color: #002F5F; /* Atlanta Braves navy blue */
@@ -130,4 +150,175 @@ button {
 
 button:hover {
   background-color: #004B91; /* Slightly darker shade of navy blue on hover */
+}
+
+/* Your existing CSS styles */
+
+/* Additional styles for the link container and delete button */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  cursor: move; /* Add draggable cursor for better UX */
+}
+
+.delete-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Add a highlight when dragging the link */
+.grid-item.dragging {
+  border: 1px dashed #ff0000;
+}
+
+/* Your existing CSS styles */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.position-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.position-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.position-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.position-4 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.position-5 {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.position-6 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.position-7 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.position-8 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.position-9 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.position-10 {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.position-11 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.position-12 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.position-13 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.position-14 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.position-15 {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.position-16 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.position-17 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.position-18 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.position-19 {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.position-20 {
+  grid-column: 5;
+  grid-row: 4;
+}
+
+.position-21 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.position-22 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.position-23 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.position-24 {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.position-25 {
+  grid-column: 5;
+  grid-row: 5;
 }
