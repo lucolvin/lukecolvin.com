@@ -40,7 +40,7 @@ h1 {
   /* Add a smooth transition to morph the color on hover */
   transition: color .6s ease;
   display: inline-block;
-  padding: 25px 300px;
+  padding: 25px 100px;
 }
 
 /* Add a morphing color effect to the header text on hover */
