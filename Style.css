@@ -34,9 +34,9 @@ h1 {
   font-size: 48px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #002F5F; /* Set the initial color of the header text to blue */
+  color: #707070; /* Set the initial color of the header text to blue */
   background-clip: text; /* Set the background-clip to text for gradient coloring */
-  background-image: linear-gradient(to right, #002F5F, #eaaa00); /* Gradient from blue to gold */
+  background-image: linear-gradient(to right, #707070, #eaaa00); /* Gradient from blue to gold */
   /* Add a smooth transition to morph the color on hover */
   transition: color .6s ease;
   display: inline-block;
@@ -45,7 +45,7 @@ h1 {
 
 /* Add a morphing color effect to the header text on hover */
 h1:hover {
-  color: #eaaa00; /* Change the header text color to indigo on hover */
+  color: #eaaa00; /* Change the header text color to gold on hover */
 }
 
 /* Style the navigation menu */
