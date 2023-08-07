@@ -37,12 +37,6 @@ nav {
   text-align: center;
   padding: 10px;
 }
-/* Style the navigation menu */
-nav {
-  background-color: #13274F; /* Atlanta Braves navy blue */
-  text-align: center;
-  padding: 10px;
-}
 
 nav ul {
   list-style: none;
@@ -64,7 +58,6 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #A6192E; /* Slightly darker shade of scarlet red on hover */
 }
-
 
 /* Custom button styles */
 .button {
@@ -115,7 +108,7 @@ button:hover {
   justify-content: center;
   line-height: 1;
   list-style: none;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
@@ -144,6 +137,7 @@ button:hover {
 }
 
 .button-container {
-  display: flex; /* Use "inline-flex" if you want the buttons to be inline but respect their width */
-  gap: 50px; /* Add some spacing between the buttons */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add some spacing between the buttons */
 }
