@@ -8,25 +8,16 @@ body, h1, h2, h3, p, ul, li, button {
 /* Set a background color for the body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #707070;
+  background-color: #5bd0ed;
 }
 
 /* Style the header */
 header {
-  background-image: url('https://github.com/lucolvin/lukecolvin.com/blob/main/Stars.jpg'); /* Add the URL of the online image */
+  background-image: url('https://imgur.com/97kHTw2'); /* Add the URL of the online image */
   background-size: cover; /* Ensure the image covers the entire header */
   background-position: center; /* Center the image within the header */
   text-align: center;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: background-position 0.5s, box-shadow 0.3s; /* Extend the transition duration */
-  font-style: italic;
-}
-
-/* Add a more noticeable hover effect to the header */
-header:hover {
-  background-position: right top; /* Move the background image to the top-right on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a subtle glow effect on hover */
 }
 
 /* Style the header text */
@@ -34,20 +25,18 @@ h1 {
   font-size: 48px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #707070; /* Set the initial color of the header text to blue */
+  color: #fff; /* Set the header text color to white */
   background-clip: text; /* Set the background-clip to text for gradient coloring */
-  background-image: linear-gradient(to right, #707070, #eaaa00); /* Gradient from blue to gold */
-  /* Add a smooth transition to morph the color on hover */
-  transition: color .6s ease;
   display: inline-block;
   padding: 25px 100px;
 }
 
-/* Add a morphing color effect to the header text on hover */
-h1:hover {
-  color: #eaaa00; /* Change the header text color to gold on hover */
+/* Style the navigation menu */
+nav {
+  background-color: #13274F; /* Atlanta Braves navy blue */
+  text-align: center;
+  padding: 10px;
 }
-
 /* Style the navigation menu */
 nav {
   background-color: #13274F; /* Atlanta Braves navy blue */
@@ -67,44 +56,15 @@ nav ul li {
 nav ul li a {
   color: #eaaa00;
   text-decoration: none;
-}
-
-nav ul li a, nav ul li button {
-  padding: 8px 15px; /* Add padding to make buttons more clickable */
-  background-color: #CE1141; /* Atlanta Braves scarlet red */
-  border-radius: 5px; /* Add rounded corners to buttons */
+  padding: 8px 15px; /* Add padding to make links more clickable */
+  border-radius: 5px; /* Add rounded corners to links */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
-  cursor: pointer; /* Change cursor to a pointer on hover */
 }
 
-nav ul li a:hover, nav ul li button:hover {
+nav ul li a:hover {
   background-color: #A6192E; /* Slightly darker shade of scarlet red on hover */
 }
 
-/* Style the main content sections */
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #002F5F; /* Atlanta Braves navy blue */
-  color: #eaaa00;
-  text-align: center;
-  padding: 10px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Optionally, set height and width to your requirements */
-  height: 50vh; /* 100% viewport height */
-}
 
 /* Custom button styles */
 .button {
@@ -114,7 +74,7 @@ footer {
   color: #eaaa00;
   text-decoration: none;
   border-radius: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
   cursor: pointer; /* Change cursor to a pointer on hover */
 }
 
@@ -138,6 +98,7 @@ button:hover {
   background-color: #002852; /* Slightly darker shade of navy blue on hover */
 }
 
+/* Custom button-29 styles */
 .button-29 {
   align-items: center;
   appearance: none;
@@ -160,7 +121,6 @@ button:hover {
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -182,6 +142,7 @@ button:hover {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
+
 .button-container {
   display: flex; /* Use "inline-flex" if you want the buttons to be inline but respect their width */
   gap: 50px; /* Add some spacing between the buttons */
